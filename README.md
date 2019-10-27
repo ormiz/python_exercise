@@ -10,8 +10,10 @@ The program can get port number from outside, for example:
 python face_detect_server.py 5000.
 
 Since the program can receive the port argument, You can specify the port inside the Dockerfile in the CMD line.
+
 To build the docker image:
 docker build -t python-exercise:latest .
+
 To run a container with port 5000 (should match the port inside the Dockerfile):
 docker run -p 5000:5000 python-exercise
 
